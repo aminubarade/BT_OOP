@@ -1,0 +1,22 @@
+{
+  "name": "tddsample",
+  "version": "0.0.0",
+  "description": "Simple TDD",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "mocha tests/tests.js"
+  },
+  "directories":{
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TDD Javascript"
+  },
+  "author": "Aminu",
+  "license": "BSD",
+  "dependencies": {
+    "mocha": "~3.5.3",
+    "chai": "~4.1.2"
+  }
+}
