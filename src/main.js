@@ -34,10 +34,10 @@ class arithGeo{
                 return -1;
         }
         if(this.isAp()){
-            return 'Arithmetic';
+            return 'arithmetic';
         }
         if(this.isGp()){
-            return 'Geometric';
+            return 'geometric';
         }
         if (!this.isAp() && ! this.isGp()) {
             return -1;
