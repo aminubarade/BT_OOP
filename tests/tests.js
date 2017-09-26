@@ -1,6 +1,5 @@
-const assert = require('chai').assert;
-const myApp = require('../src/main.js');
-
+import {assert} from 'chai';
+import arithGeo from '../src/main.js';
 describe("aritGeo", function(){
     describe("Handles valid input", function(){
         it("Should return arithmetic", function(){

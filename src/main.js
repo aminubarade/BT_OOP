@@ -1,31 +1,31 @@
 class arithGeo{            
     constructor(sequence){
     this.sequence = sequence;
-    this.T1 = sequence[0];
-    this.T2 = sequence[1];
-    this.n  = sequence.length -1;//number of terms
-    this.d  = this.T2 - this.T1; 
-    this.r  = this.T2 / this.T1;
+    this.term1 = sequence[0];
+    this.term2 = sequence[1];
+    this.numLen  = sequence.length -1;//number of terms
+    this.diff  = this.term2 - this.term1; 
+    this.ratio  = this.term2 / this.term1;
     this.ap = true;
     this.gp = true;
     }
-    isAp(){
-        for (var i = 0; i < this.n; i++) {
-            if (this.sequence[i+1] - this.sequence[i] != this.d) {
+    isAp() {
+        for (var i = 0; i < this.numLen; i++) {
+            if (this.sequence[i+1] - this.sequence[i] != this.diff) {
                 this.ap = false;
             }
         }
         return this.ap;
     }
-    isGp(){    
-        for (var j = 0; j < this.n; j++) {
-            if (this.sequence[j+1] / this.sequence[j] != this.r) {
+    isGp() {    
+        for (var j = 0; j < this.numLen; j++) {
+            if (this.sequence[j+1] / this.sequence[j] != this.ratio) {
                 this.gp = false;
             }
         }
         return this.gp;
     }
-    determineSequence(){
+    determineSequence() {
 
         if (this.sequence.length == 0) {
             return 0;
@@ -44,6 +44,5 @@ class arithGeo{
         }
     }
 
-}    
-let Arithmetic = new arithGeo([1,2,3,4,5]);
-console.log(Arithmetic.determineSequence());
+}
+export default arithGeo;
